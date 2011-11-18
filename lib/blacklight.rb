@@ -52,7 +52,7 @@ module Blacklight
   end
 
   def self.solr
-    @solr ||=  RSolr::Ext.connect(Blacklight.solr_config)
+    @solr ||=  RSolr.connect(Blacklight.solr_config)
   end
 
   def self.solr_config
